@@ -6,9 +6,17 @@ import os
 
 app = Flask(__name__)
 
-# 🔥 Directly embed your Gemini API key here
-genai.configure(api_key=os.environ['GOOGLE_AI_API_KEY'])
-model = genai.GenerativeModel("gemini-1.5-pro")
+
+API_KEY = os.getenv("GOOGLE_API_KEY")
+
+if not API_KEY:
+    raise ValueError(
+        "Please set the GOOGLE_API_KEY environment variable."
+    )
+
+genai.configure(api_key=API_KEY)
+
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # Jedi profiles, including Grogu
 JEDI_PROFILES = [
