@@ -40,11 +40,6 @@ An AI-powered persuasion game where players assume the role of Darth Jar Jar Bin
 ---
 
 ## Features
-...
-
----
-
-## Features
 
 ### AI-Powered NPCs
 
