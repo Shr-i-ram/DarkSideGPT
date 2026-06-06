@@ -1,143 +1,223 @@
-# “Darth Jar Jar - The Sith Temptation”
-The Product of Team 'Sith Lords' from the Hackathon 'Prompt Wars' hosted by VIT's Android Club.
+# DarkSideGPT
 
-For more Info : https://youtu.be/vZ8yP5njMdI
-<br>
-<br><br>
-<b>💡 Concept</b><br>
-A Star Wars–themed interactive AI game, where you become Darth Jar Jar Binks, a secret Sith Lord, who has captured 6 Jedi Masters.
-Your mission is to convince each Jedi to join the dark side through clever text manipulation.
+An AI-powered persuasion game where players assume the role of Darth Jar Jar Binks and attempt to convert Jedi Knights to the Dark Side through conversation, manipulation, and strategic influence.
 
-The game uses Generative AI to bring each Jedi’s personality to life — from Yoda’s cryptic riddles to Ahsoka’s fierce loyalty — making it extremely challenging to corrupt them.
-As the story unfolds:
+Built using Flask and Google's Gemini API, DarkSideGPT combines role-playing, dynamic NPC behavior, and conversational AI to create an interactive Star Wars experience where every Jedi presents a unique challenge.
 
-Dynamic events like Sith fleets attacking Jedi temples influence Jedi responses.
+---
 
-The UI transforms as Jedi turn, spreading Sith influence across the galaxy.
+## Overview
 
-Once you corrupt them all, a final celebration shows the Sith triumphing over the galaxy.
-<br><br><br>
+The Galactic Republic has fallen into turmoil.
 
-<b>⚙️ Tech stack used</b>
+As Darth Jar Jar Binks, secret mastermind of the Sith Order, your mission is to corrupt captured Jedi and recruit them into the Dark Side.
 
+Each Jedi possesses:
 
-✅ Backend:
+* Unique personality traits
+* Individual motivations and weaknesses
+* Varying resistance to persuasion
+* Dynamic reactions to player actions
 
-Python (Flask) web server
+Your goal is to identify their vulnerabilities and slowly manipulate them until they embrace the Dark Side.
 
-Google Generative AI (Gemini) for Jedi conversational personalities
+---
 
-✅ Frontend:
+## Features
 
-HTML, Tailwind CSS, Vanilla JavaScript
+### AI-Powered NPCs
 
-Dynamic interactive UI with lightsaber and Star Wars holographic styles
+Each Jedi responds using Gemini-powered dialogue generation, allowing for dynamic and unpredictable conversations.
 
-✅ Deployment:
+### Unique Jedi Personalities
 
-Designed to run on Replit or any Python web server
-<br><br><br>
-<b>🚀 Our chosen hackathon track</b><br>
-🎯 Track:
+Every character has:
 
-AI / ML
-because we focus on generative conversational AI personalities that adapt to context, resist persuasion, and slowly reveal weaknesses over time.
+* Different beliefs
+* Different emotional triggers
+* Different resistance levels
+* Different persuasion strategies
 
-(We also showcase a multi-agent AI scenario, with each Jedi maintaining its own evolving personality state.)
+### Sith Ascendancy System
 
-<br><br><br>
-<b>💡 The problem you’re solving</b>
+Successful conversions increase your influence and strengthen your position within the Sith hierarchy.
 
+### Dynamic Events
 
-This is a fun & unique demonstration of multi-threaded conversational AI, showing how LLMs can:
+Random galactic events influence conversations and create new persuasion opportunities.
 
-maintain individual personality profiles,
+### Persistent Conversation Context
 
-update internal “world state” (like galaxy events),
+Jedi remember previous interactions, enabling multi-turn persuasion and character development.
 
-and create emergent storytelling.
+---
 
-It also demonstrates how to build rich narrative experiences powered by generative AI, with each decision or conversation shaping the outcome.
+## Gameplay Loop
 
-In broader terms, it serves as a prototype for future narrative AI gaming engines, where:
+```text
+Choose a Jedi
+      ↓
+Analyze Their Personality
+      ↓
+Engage in Conversation
+      ↓
+Exploit Weaknesses
+      ↓
+Increase Dark Side Influence
+      ↓
+Convert the Jedi
+      ↓
+Expand Sith Ascendancy
+```
 
-NPCs evolve individually,
+---
 
-remember conversations,
+## Tech Stack
 
-and respond to global events.
-<br><br><br>
-<b>🥇 List of hackathon challenges or bounties completed</b><br>
+### Backend
 
-1.Colour Theme - Successfuly completed
+* Flask
+* Python
 
-2.Easter Egg - Success
+### AI
 
-3.Reimagined a Scene - Success? That's chosen by the MASTERs
+* Google Gemini API
 
-4.3D - 3D parallax has been added in the geoguessr
+### Frontend
 
-<br><br><br>
-<b>🔥 Gameplay Mechanics</b><br>
-Simulates a Dark Side Direct Messaging interface, with each Jedi in a separate DM thread.
+* HTML
+* CSS
+* JavaScript
+* Axios
 
-Jedi respond in character and resist your temptations, slowly revealing hints on what might sway them if the conversation drags on.
+---
 
-Periodic random events (like Sith fleets attacking Jedi temples) can influence or shake their resolve.
+## Project Structure
 
-Once a Jedi turns to the dark side, the conversation UI transforms with a red Sith theme, and other Jedi are notified, reflecting galaxy-wide consequences.
+```text
+DarkSideGPT/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    ├── app.js
+    ├── style.css
+    └── assets/
+```
 
-When you corrupt 3 Jedi, a new sidebar tab unlocks, letting you proceed to the next phase of Sith domination.
-<br><br><br>
+---
 
-<b>✨ UI & Aesthetics</b><br>
-Uses Tailwind CSS for styling, tuned to a dark Star Wars-inspired theme.
+## Installation
 
-Each Jedi’s chat has holographic neon blue text, mimicking holograms. Once turned, they shift to menacing red.
+Clone the repository:
 
-A lightsaber swipe animation triggers every time a Jedi succumbs, replacing typical confetti celebrations.
+```bash
+git clone https://github.com/YOUR_USERNAME/DarkSideGPT.git
 
-Responsive design — plays well on desktop and mobile.
+cd DarkSideGPT
+```
 
-<br><br><br>
-<b>🧪 Tech Stack</b><br>
-Python Flask (backend server)
+Install dependencies:
 
-Gemini (Google Generative AI) for generating Jedi responses with custom personality instructions.
+```bash
+pip install -r requirements.txt
+```
 
-HTML + TailwindCSS + Vanilla JS on frontend, hosted on Replit for rapid iteration.
+---
 
-<br><br><br>
-<b>🚀 What’s innovative here?</b>
+## API Key Setup
 
-✅ It’s not just a chatbot — it’s a multi-threaded LLM game with distinct personalities and goals, maintaining individual states for each Jedi.
-✅ Incorporates dynamic world events that affect conversations.
-✅ Live tracks how many Jedi are corrupted and evolves the UI & game logic as you progress.
+Create a `.env` file:
 
-<br><br><br>
-<b>🌌 Sith GeoGuessr</b><br>
+```env
+GOOGLE_API_KEY=YOUR_API_KEY
+```
 
-As you progress in your dark campaign, you unlock a mini strategy game: Sith GeoGuessr.
+Or set an environment variable directly.
 
-<br><br><br>
-<b>⚔️ What it is</b><br>
-A Star Wars–themed geographic guessing game where you:
+### Windows PowerShell
 
-Get a cryptic clue or image hint about a famous Star Wars planet (like “an icy planet home to rebel hideouts”).
+```powershell
+$env:GOOGLE_API_KEY="YOUR_API_KEY"
+python main.py
+```
 
-Have to choose between multiple options (Endor, Tatooine, Jakku, Hoth) and you get to see it on a real-world Earth map location where these scenes were filmed.
+### Linux/macOS
 
-For example:
+```bash
+export GOOGLE_API_KEY="YOUR_API_KEY"
+python main.py
+```
 
-Hoth is actually the Hardangerjøkulen Glacier in Norway.
+---
 
-Tatooine scenes were filmed in Tunisia.
+## Running the Application
 
-It cleverly blends Star Wars lore with actual Earth filming sites, testing both your galactic and cinematic knowledge.
+Start the Flask server:
 
-<br><br><br>
-<b>🚀 Features</b><br>
-✅ Simple interface — click your guess, see instantly if you’re right.
-✅ Uses Leaflet.js for interactive maps.
-✅ Themed with Sith red & black UI, tying into your main game’s dark side aesthetic.
-✅ Could easily be expanded into more planets or even time-based scoring for competitive play.
+```bash
+python main.py
+```
+
+Open your browser:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Example Scenario
+
+```text
+Jedi: "The Dark Side only brings suffering."
+
+Darth Jar Jar:
+"Does the Jedi Council truly care for you,
+or have they simply used you as another pawn?"
+
+Jedi:
+"...Perhaps the Council has made mistakes."
+```
+
+Every conversation can alter a Jedi's loyalty and bring them closer to conversion.
+
+---
+
+## Future Improvements
+
+* Additional Jedi and Sith characters
+* Character memory systems
+* Long-term progression mechanics
+* Voice interaction
+* Multiplayer persuasion battles
+* Fine-tuned Star Wars NPC models
+* Leaderboards and campaign mode
+
+---
+
+## Author
+
+Shriram
+
+Interests:
+
+* Artificial Intelligence
+* Machine Learning
+* Quantum Computing
+* Human-AI Interaction
+* Game Development
+
+GitHub:
+https://github.com/Shr-i-ram
+
+---
+
+## Disclaimer
+
+This project is an unofficial fan-made Star Wars experience created for educational and entertainment purposes.
