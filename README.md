@@ -23,6 +23,27 @@ Your goal is to identify their vulnerabilities and slowly manipulate them until 
 
 ---
 
+# DarkSideGPT
+
+An AI-powered persuasion game where players assume the role of Darth Jar Jar Binks and attempt to convert Jedi Masters to the Dark Side through conversation and manipulation.
+
+## Preview
+
+### Opening Crawl
+
+![Opening Crawl](img1.png)
+
+### Gameplay
+
+![Gameplay Interface](img2.png)
+
+---
+
+## Features
+...
+
+---
+
 ## Features
 
 ### AI-Powered NPCs
